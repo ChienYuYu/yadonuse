@@ -38,6 +38,28 @@
         </div>
         <hr>
     </div>
+    <div class="wrap wrap4">
+        <label>
+            <input type="radio" id="elc" name="group1">
+            <p>相電壓</p>
+        </label>
+        <label>
+            <input type="radio" id="elc" name="group1">
+            <p>線電壓</p>
+        </label>
+        <label>
+            <input type="radio" id="elc" name="group1">
+            <p>相電流</p>
+        </label>
+        <label>
+            <input type="radio" id="elc" name="group1">
+            <p>有效功率</p>
+        </label>
+        <label>
+            <input type="radio" id="elc" name="group1">
+            <p>無效功率</p>
+        </label>
+    </div>
   </div>
 </template>
 
@@ -181,6 +203,31 @@ export default {
             height: 400px;
         }
 
+    }
+
+    .wrap4{
+        display: flex;
+        label{
+            margin: 0 10px;
+            padding: 0 .5rem;
+            width: 130px;
+            height: 40px;
+            background: #1572FF;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-radius: 5px;
+            input{
+                width: 25px;
+                height: 25px;
+            }
+            p{
+                font-size: 18px;
+                // line-height: 40px;
+                color: #fff;
+                vertical-align: top;
+            }
+        }
     }
 
 </style>
